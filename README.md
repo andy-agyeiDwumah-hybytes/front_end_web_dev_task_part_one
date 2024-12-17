@@ -1,4 +1,4 @@
-# Front-End Web Development (Part 1)
+# Front-End Web Development (Part 1) 💥
 
 This is **Part 1** of the Front-End Web Development task. This covers the following months:
 
@@ -11,7 +11,7 @@ This is **Part 1** of the Front-End Web Development task. This covers the follow
 **than using a backend solution (e.g., Node.js). In a real-world scenario, a backend would**
 **be used to securely store and handle API keys.**
 
-## Prerequisites 
+## Prerequisites❗
 
 Before starting, you will need to:
 1. Create an account with [RapidAPI](https://rapidapi.com/) to get your APIKEY
@@ -26,10 +26,10 @@ This is necessary to view the following exercises:
 3. News Aggregator
 4. Dynamic Search Feature
 
-## Getting Started
+## Getting Started ✅
 
 1. Clone the repository: <br>
-`git clone `
+`git clone https://github.com/andy-agyeiDwumah-hybytes/front_end_web_dev_task_part_one.git`
 
 2. Create the `secretFile.js` file in the root directory of this project
 
