@@ -2,7 +2,7 @@
 
 This is **Part 1** of the Front-End Web Development task. This covers the following months:
 
-* **Month 1**: HTML & CSS
+* **Month 1**: HTML & CSS Foundations
 * **Month 2**: Advanced CSS & Introduction to JavaScript
 * **Month 3**: JavaScript DOM Manipulation & Events
 * **Month 4**: jQuery & AJAX
