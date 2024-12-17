@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* GOOGLE FONT */
+.parkinsans {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+/* END GOOGLE FONT */
+
+body {
+    --white: #ebecf0;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding-top: 3em;
+}
+
+header, #word-definition-container {
+    text-align: center;
+}
+
+#word-definition-container {
+    padding: 2em 0;
+}
+
+h2::first-letter {
+    text-transform: capitalize;
+}
+
+.partOfSpeech {
+    font-size: 1.2rem;
+}

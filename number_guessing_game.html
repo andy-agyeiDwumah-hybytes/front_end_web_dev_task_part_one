@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="number_guessing_game.css">
+    <!-- JAVASCRIPT -->
+    <script src="number_guessing_game.js" defer></script>
+    <title>Number guessing game</title>
+  </head>
+  <body>
+    <main>
+      <form id="my-form">
+        <h1>Guess the right number!</h1>
+        <p id="required-text">
+          Required fields are followed by <span aria-label="required">*</span>.
+        </p>
+        <div>
+          <label for="number"
+            >Number:
+            <span aria-label="required">*</span>
+          </label>
+          <input
+            type="number"
+            name="user_number"
+            id="number"
+            min="1"
+            max="100"
+            autofocus
+            required
+          >
+        </div>
+        <div>
+          <button type="reset" id="restart">Reset</button>
+        </div>
+        <div class="submit-button-container">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+      <div aria-live="polite" aria-atomic="true">
+        <p>Number of guesses: <span id="num-of-guesses"></span></p>
+      </div>
+      <div aria-live="polite">
+        <p id="feedback"></p>
+      </div>
+    </main>
+  </body>
+</html>

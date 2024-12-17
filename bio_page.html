@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="bio_page.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+    <!-- END GOOGLE FONT -->
+    <title>My bio page</title>
+  </head>
+  <body class="roboto-slab">
+    <main id="main">
+      <div class="flex-container">
+        <div class="introduction-details-flex-item">
+          <section aria-labelledby="introduction-heading">
+            <div class="img-container">
+                <img src="linkedin_pic.PNG" alt="User headshot" id="profile-img">
+            </div>
+            <div id="introduction-container">
+              <h1 id="introduction-heading">Hi, I'm Andy.</h1>
+              <div id="introduction-container-extra-details">
+                <h4>FrontEnd Developer Intern</h4>
+                <h4>andy.dwumah@hybytes.co.uk</h4>
+                <h5>London</h5>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main-details-flex-item">
+          <section aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading" class="h2-headings">About me</h2>
+            <p class="about-me-para">
+              I'm a graduate from the University of Kent, where I studied
+              Criminology and Sociology with a Year in Computing. Currently,
+              I&apos;m honing my skills as a FrontEnd Developer Intern at
+              hybytes, where I&apos;m able to merge my academic background with
+              my passion for software engineering. I thrive on creating
+              intuitive user experiences and am excited to contribute to
+              innovative projects in the tech world.
+            </p>
+          </section>
+          <section aria-labelledby="my-hobbies-heading">
+            <h2 id="my-hobbies-heading" class="h2-headings">Hobbies</h2>
+            <p>I like to...</p>
+            <ul>
+              <li>Go to the gym.</li>
+              <li>Run.</li>
+              <li>Code.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <section aria-labelledby="my-education-heading" class="my-education-section">
+        <h2 id="my-education-heading" class="h2-headings">Education</h2>
+        <table>
+          <caption>
+            My education
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Institution</th>
+              <th scope="col" colspan="2">Dates</th>
+              <th scope="col" rowspan="2">Field of study</th>
+              <th scope="col" rowspan="2">Location</th>
+              <th scope="col" rowspan="2">Grade</th>
+              <th scope="col" rowspan="2">Additional information</th>
+            </tr>
+            <tr>
+              <th scope="col" class="start-date">From</th>
+              <th scope="col" class="end-date">To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">CoGrammar and HyperionDev</th>
+              <td><time datetime="2019-09-14">March 11, 2024</time></td>
+              <td><time datetime="2019-09-14">June 30, 2024</time></td>
+              <td>Software Engineering</td>
+              <td>Remote</td>
+              <td>98%</td>
+              <td>N/A</td>
+            </tr>
+            <tr class="table-last-row">
+              <th scope="row">University of Kent</th>
+              <td><time datetime="2019-09-14">September 14, 2019</time></td>
+              <td><time datetime="2019-09-14">June 16, 2023</time></td>
+              <td>Criminology and Sociology with a Year in Computing</td>
+              <td>Kent</td>
+              <td>1st Class</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+:root {
+    --white: #fffff0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #0e1111;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    font-size: 1.5rem;
+    line-height: 2;
+    padding-inline: 1em;
+    border-radius: 5px;
+    background-color: #0047AB;
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#heading-container {
+    display: none;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--white);
+}

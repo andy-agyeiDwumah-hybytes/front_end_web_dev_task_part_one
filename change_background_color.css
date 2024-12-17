@@ -1,0 +1,47 @@
+:root {
+    --border-radius: 10px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    transition: background-color 1.5s ease-in;
+}
+
+span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+#main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button-container {
+    background-color: #007BFF;
+    border: 2px solid #fff;
+    outline: 4px solid #B0BEC5;
+    border-radius: var(--border-radius);
+}
+
+button {
+    background-color: transparent;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1em;
+}

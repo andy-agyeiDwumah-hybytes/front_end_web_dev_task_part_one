@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <link rel="stylesheet" href="favourite_movies.css">
+    <script src="favourite_movies.js" defer></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fresca&family=Klee+One&display=swap"
+      rel="stylesheet"
+    >
+    <!-- END GOOGLE FONT -->
+    <title>Favourite Movies</title>
+  </head>
+  <body class="klee-one-regular">
+    <main>
+      <table>
+        <caption>
+          Favourite Movies
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Director</th>
+            <th scope="col">Description</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Poster Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Book of eli</th>
+            <td><time datetime="2010">2010</time></td>
+            <td>
+              <p>Albert Hughes</p>
+              <p>Allen Hughes</p>
+            </td>
+            <td>
+              <p>
+                A drifter fights his way across a ravaged, post-apocalyptic
+                America while protecting a sacred book that holds the secrets to
+                humanity's salvation.
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Action</li>
+                <li>Sci-fi</li>
+              </ul>
+            </td>
+            <td>
+              <a href="#" class="poster-link" data-poster="book_of_eli.jpg">
+                View Poster
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Miracle in cell number 7</th>
+            <td><time datetime="2013">2013</time></td>
+            <td><p>Hwan-kyung Lee</p></td>
+            <td>
+              <p>
+                A story about the love between a mentally-ill father and his
+                lovingly adorable daughter.
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Drama</li>
+              </ul>
+            </td>
+            <td>
+              <a
+                href="#"
+                class="poster-link"
+                data-poster="miracle_in_cell_number_7.jpg"
+              >
+                View Poster
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hancock</th>
+            <td><time datetime="2008">2008</time></td>
+            <td><p>Peter Berg</p></td>
+            <td>
+              <p>
+                Hancock is a superhero whose ill-considered behavior regularly
+                causes damage in the millions. He changes when the person he
+                saves helps him improve his public image.
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Superhero</li>
+                <li>Action</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Fantasy</li>
+              </ul>
+            </td>
+            <td>
+              <a href="#" class="poster-link" data-poster="hancock.jpg">
+                View Poster
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">The Matrix</th>
+            <td><time datetime="1999">1999</time></td>
+            <td>
+              <p>Lana Wachowski</p>
+              <p>Lilly Wachowski</p>
+            </td>
+            <td>
+              <p>
+                When a beautiful stranger leads computer hacker Neo to a
+                forbidding underworld, he discovers the shocking truth--the life
+                he knows is the elaborate deception of an evil
+                cyber-intelligence.
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Artificial Intelligence</li>
+                <li>Action</li>
+                <li>Sci-Fi</li>
+                <li>Cyberpunk</li>
+              </ul>
+            </td>
+            <td>
+              <a href="#" class="poster-link" data-poster="the_matrix.jpg">
+                View Poster
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="poster-modal" class="modal">
+        <!-- Ensure keyboard accessibility -->
+        <div class="close-modal-container" tabindex="0" role="button">
+          <span class="close" id="close-modal"></span>
+        </div>
+        <img src="" alt="Movie poster" id="poster-image">
+      </div>
+    </main>
+  </body>
+</html>

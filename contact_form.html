@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- GOOGLE FONT -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link 
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" 
+      rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="contact_form.css">
+    <!-- JAVASCRIPT -->
+    <script src="contact_form.js" defer></script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <main>
+      <form method="get" id="my-form" class="work-sans-contact-form-font">
+        <div class="heading-container">
+          <h1>Contact me</h1>
+        </div>
+        <p>
+          Required fields are followed by <span aria-label="required">*</span>.
+        </p>
+        <div>
+          <label for="name">
+            Name:
+            <span aria-label="required">*</span>
+          </label>
+          <input type="text" name="user_name" id="name" required>
+        </div>
+        <div>
+          <label for="email">
+            Email:
+            <span aria-label="required">*</span>
+          </label>
+          <input type="email" name="user_email" id="email" required>
+        </div>
+        <div>
+          <label for="message">
+            Message:
+            <span aria-label="required">*</span>
+          </label>
+          <textarea name="user_message" id="message" required></textarea>
+        </div>
+        <div class="button-container">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

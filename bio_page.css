@@ -1,0 +1,237 @@
+:root {
+    --black: rgba(0 0 0 / 1);
+    --white: #F5F5FA;
+    --main-background-colour: #f7f7f9;
+    --secondary-background-colour: #f2f2f7;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* GOOGLE FONT */
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* END GOOGLE FONT */
+
+body {
+    margin: 3rem 0 3rem;
+    background-color: #232331;
+}
+
+#main {
+    max-width: 900px;
+    transition: width 1.9s;
+    border-radius: 5%;
+    border-start-start-radius: 15%;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    background-color: var(--main-background-colour);
+    padding: 1.2em 1.2em 2.8em;
+}
+
+.h2-headings {
+    font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+}
+
+.h2-headings::before { /* Half underline underneath text */
+    content: "";
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    border-bottom: 3px solid var(--black);
+}
+
+h4 {
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+/* INTRODUCTION SECTION */
+#profile-img {
+    border-radius: 50%;
+    transition: all 2s;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#introduction-container-extra-details {
+    line-height: 0.5;
+    text-align: center;
+}
+
+/* ABOUT ME SECTION */
+.about-me-para {
+    line-height: 1.8;
+}
+
+/* HOBBIES SECTION */
+#my-hobbies-heading {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: circle;
+    line-height: 1.6;
+}
+
+/* EDUCATION SECTION */
+.my-education-section {
+    background-color: var(--secondary-background-colour);
+    padding: 1.2em 0 1.8em;
+}
+
+table {
+    font-size: 0.8rem;
+    border-spacing: 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 0.6em 1em;
+}
+
+thead > tr > th {
+    vertical-align: bottom;
+}
+
+table > thead {
+    background-color: #D4DCFF;
+}
+
+.start-date {
+    background-color:#91B7C7;
+}
+
+.end-date {
+    background-color:#D4D2D5;
+}
+
+.table-last-row {
+    background-color:#EFF9F0;
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media(width >= 280px) {
+    #main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    /* INTRODUCTION SECTION */
+    .introduction-details-flex-item {
+        margin: 0 auto;
+    }
+
+    #profile-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #introduction-container {
+        border-right: 0;
+    }
+
+    h1 {
+        letter-spacing: 0;
+    }
+
+    /* MAIN DETAILS AND EDUCATION SECTION  */
+    .main-details-flex-item, .my-education-section {
+        padding-inline: 0.8em;
+    }
+
+    /* TABLE */
+    table {
+        overflow: auto;
+        display: block;
+    }
+}
+
+@media(width >= 992px) {
+    #main {
+        width: 75%;
+    }
+
+    .flex-container {
+        flex-wrap: nowrap;
+    }
+
+    /* INTRODUCTION SECTION */
+    .introduction-details-flex-item {
+        margin: 0;
+    }
+
+    #introduction-container {
+        border-right: 1px solid var(--black);
+    }
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    /* MAIN DETAILS AND EDUCATION SECTION  */
+    .main-details-flex-item, .my-education-section {
+        padding-inline: 0;
+    }
+
+    /* EDUCATION SECTION */
+    .my-education-section {
+        padding-left: 0.8em;
+    }
+
+    /* MAIN DETAILS SECTION */
+    .main-details-flex-item {
+        padding-left: 2em;
+    }
+
+    /* TABLE */
+    table {
+        display: table; /* default is 'table' */
+    }
+}
+
+@media(width >= 1200px) {
+    #main {
+        width: 55%;
+    }
+
+    /* INTRODUCTION SECTION */
+    #profile-img {
+        height: 280px;
+        width: 280px;
+    }
+}

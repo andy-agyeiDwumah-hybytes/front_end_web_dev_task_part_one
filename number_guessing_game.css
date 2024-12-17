@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0 0 0 1.5em;
+    background-color: #F6F4F3;
+}
+
+form {
+    margin-bottom: 2.8em;
+    width: max-content;
+}
+
+#required-text {
+    margin-bottom: 2em;
+}
+
+input[type="number"] {
+    padding: 0.5em;
+    margin: 1em 0 2em 0;
+    width: 100%;
+}
+
+div:has(button) {
+    display: inline-block;
+}
+
+div.submit-button-container {
+    margin: 0 0 0 2em;
+}
+
+span[aria-label="required"] {
+    color: rgba(255 0 0 / 1);
+}
+
+button {
+    line-height: 2;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="reset"] {
+    background-color: #D3D3D3;
+}
+
+button[type="submit"] {
+    background-color: #35CE8D;
+}

@@ -1,0 +1,124 @@
+:root {
+    --black: #03091e;
+    --white: #F7F7F7;
+    --transition-animation-count: 3s;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--black);
+}
+
+/* GOOGLE FONT */
+.noto-sans-sc {
+    font-family: "Noto Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+/* END GOOGLE FONT */
+
+h1 {
+    text-align: center;
+    color: var(--white);
+    font-size: clamp(1rem, 6vw, 3rem);
+}
+
+h1::first-letter {
+    background: linear-gradient(45deg, rgb(199, 4, 4), rgb(0, 0, 212));
+    border-radius: 50%;
+}
+
+h3 {
+    text-wrap: balance;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+#grid-container {
+    display: grid;
+    gap: 0.5em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.outer-container {
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    background-color: #0c0c0f;
+    color: var(--white);
+    transition: height 1s ease-in;
+    /* important: allows cursor to access beneath content */
+    pointer-events: none;
+}
+
+.inner-container:hover {
+    animation-duration: var(--transition-animation-count);
+    animation-name: zoom;
+    animation-timing-function: ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media(width >= 280px) {
+    #grid-container {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+
+    .text-container {
+        padding-inline: 0.5em;
+    }
+}
+
+@media(width >= 576px) {
+    #grid-container {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    .text-container {
+        padding-inline: 1.2em;
+    }
+}
+
+@media (width >= 992px) {
+    #grid-container {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+}

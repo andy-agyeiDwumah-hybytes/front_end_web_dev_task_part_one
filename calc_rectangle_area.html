@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="calc_rectangle_area.css">
+    <!-- JAVASCRIPT -->
+    <script src="calc_rectangle_area.js" defer></script>
+    <title>Calculate area of rectangle</title>
+  </head>
+  <body>
+    <main>
+      <form method="get" id="my-form">
+        <h1>Calculate area of a rectangle</h1>
+        <p>
+          Required fields are followed by <span aria-label="required">*</span>.
+        </p>
+        <div>
+          <label for="width"
+            >Width:
+            <span aria-label="required">*</span>
+          </label>
+          <input type="number" name="width" id="width" min="1" required>
+        </div>
+        <div>
+          <label for="height"
+            >Height:
+            <span aria-label="required">*</span>
+          </label>
+          <input type="number" name="height" id="height" min="1" required>
+        </div>
+        <div class="button-container">
+            <button type="submit">Calculate area</button>
+        </div>
+      </form>
+      <div class="answer-container" aria-live="polite" aria-atomic="true">
+        <p>The area of the rectangle is: <span id="answer-span"></span></p>
+      </div>
+    </main>
+  </body>
+</html>

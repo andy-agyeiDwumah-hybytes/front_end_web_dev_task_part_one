@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT -->
+    <script src="news_aggregator.js" type="module"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="news_aggregator.css">
+    <title>News Aggregator</title>
+  </head>
+  <body class="akatab-medium">
+    <header aria-live="polite">
+      <h1></h1>
+    </header>
+    <main>
+      <div id="results">
+        <p class="loading-paragraph">Loading...</p>
+        <ul aria-live="polite">
+          <!-- see news_aggregator.js -->
+          <!-- <li>
+            <div>
+              <div class="photo-container">
+                <h2>News Title</h2>
+                <a href="#">See more</a>
+                <p class="source-name">BBC News</p>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

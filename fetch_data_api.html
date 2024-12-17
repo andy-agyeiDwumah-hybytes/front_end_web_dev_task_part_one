@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    >
+    <!-- CSS -->
+    <link rel="stylesheet" href="fetch_data_api.css">
+    <!-- JAVASCRIPT -->
+    <script src="fetch_data_api.js" type="module"></script>
+    <title>Fetch Data From API</title>
+  </head>
+  <body class="parkinsans">
+    <header>
+      <h1>WordsAPI</h1>
+      <p>
+        Lets you retrieve information about English words, including
+        definitions, synonyms, rhymes, pronunciation, syllables, and frequency
+        of usage.
+      </p>
+    </header>
+    <main>
+      <div id="word-definition-container" aria-live="polite">
+        <h2 id="word">Loading...</h2>
+        <p id="definition"></p>
+      </div>
+    </main>
+  </body>
+</html>

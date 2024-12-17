@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="dynamic_image_gallery_jquery.css">
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JAVASCRIPT -->
+    <script src="dynamic_image_gallery_jquery.js"></script>
+    <title>Dynamic Image Gallery</title>
+  </head>
+  <body>
+    <main>
+      <div id="button-container">
+        <!-- Show all filters by default -->
+        <button data-filter="all" disabled class="active">All</button>
+        <button data-filter="movie">Movies</button>
+        <button data-filter="tv-show">Tv Shows</button>
+      </div>
+      <div id="grid-container">
+        <div data-category="movie">
+          <img src="american_sniper.jpg" alt="American Sniper">
+        </div>
+        <div data-category="tv-show">
+          <img src="family_guy.jpg" alt="Family Guy">
+        </div>
+        <div data-category="movie">
+          <img src="book_of_eli.jpg" alt="Book Of Eli">
+        </div>
+        <div data-category="tv-show">
+          <img src="american_dad.jpg" alt="American Dad">
+        </div>
+        <div data-category="movie">
+          <img
+            src="good_luck_to_you_leo_grande.jpg"
+            alt="Good Luck To You Leo Grande"
+          >
+        </div>
+        <div data-category="tv-show">
+          <img src="peaky_blinders.jpg" alt="Peaky Blinders">
+        </div>
+        <div data-category="movie"><img src="hancock.jpg" alt="Hancock"></div>
+        <div data-category="tv-show">
+          <img src="money_heist.jpg" alt="Money Heist">
+        </div>
+        <div data-category="movie"><img src="i_robot.jpg" alt="I Robot"></div>
+        <div data-category="tv-show">
+          <img
+            src="orange_is_the_new_black.webp"
+            alt="Orange Is The New Black"
+          >
+        </div>
+        <div data-category="movie">
+          <img src="inside_man.jpg" alt="Inside Man">
+        </div>
+        <div data-category="tv-show">
+          <img src="the_boys.jpg" alt="The Boys">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

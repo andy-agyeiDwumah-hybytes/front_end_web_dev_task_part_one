@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2em;
+    transition: width 1s ease-in;
+    max-width: 1600px;
+    background-color: #F9F6EE;
+}
+
+h2 {
+    padding-left: 1em;
+    margin: 2em 0;
+}
+
+header, form {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+button {
+    line-height: 1.5;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #55c2da;
+}
+
+input:user-invalid {
+    border: 1px solid rgba(255 0 0 / 0.6);
+    outline-color: rgba(255 0 0 / 0.6);
+}
+
+p.error, p.loading-paragraph {
+    text-align: center;
+}
+
+p.loading-paragraph, p.error {
+    font-size: 2rem;
+}
+
+/* Capitalise user word, definition, partOfSpeech */
+.capitalise::first-letter {
+    text-transform: capitalize;
+}
+
+ul > li {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media (width >= 280px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (width >= 768px) {
+    body {
+        width: 60%;
+    }
+}

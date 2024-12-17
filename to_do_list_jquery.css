@@ -1,0 +1,166 @@
+:root {
+    --red: rgba(255 0 0 / 1);
+    --green: rgba(0 255 0 / 1);
+    --black: #000;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #05081c;
+    padding: 2em 0;
+}
+
+/* GOOGLE FONT */
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+/* END GOOGLE FONT */
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    text-wrap: balance;
+}
+
+span {
+    color: var(--red);
+}
+
+textarea {
+    resize: vertical;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1500px;
+    transition: width 1s ease-in;
+}
+
+form:not(form.remove-btn-form) {
+    padding: 2em 1em;
+    margin-bottom: 3em;
+    box-shadow: 1px 1px 5px var(--black);
+    color: var(--black);
+    background-color: #f8f9fa;
+    border-end-end-radius: 10px;
+}
+
+input,
+textarea {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ebebeb;
+}
+
+input[type="date"] {
+    padding: 0.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+button {
+    line-height: 1.5;
+    padding: 0.4em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--black);
+    font-weight: 600;
+}
+
+button#create-task-submit-btn {
+    background-color: #28a745;
+}
+
+button:hover {
+    transform: translateY(1.1px);
+}
+
+button.remove-btn {
+    background-color: #dc3545;
+}
+
+button.edit-btn {
+    background-color: #debee9;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+ul > li:not(:first-child) {
+    border-top: 1px solid var(--black);
+}
+
+li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+p.description {
+    margin-top: 2.5em;
+    line-height: 1.4;
+}
+
+div:has(#task-list) {
+    box-shadow: 3px 3px 10px var(--black), -3px -3px 10px var(--black);
+    border-radius: 10px;
+    background-color: #e4e6e8;
+}
+
+div.hide-btn-container {
+    margin-bottom: 1em;
+}
+
+input.input-edit,
+textarea.input-edit {
+    background-color: #d6d6d6;
+}
+
+.save-btn, .cancel-btn {
+    display: inline-block;
+}
+
+.cancel-btn {
+    background-color: rgb(159, 159, 159);
+}
+
+.save-btn {
+    margin-left: 1em;
+    background-color: #4169e1;
+}
+
+form.remove-btn-form {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media (width >= 280px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (width >= 576px) {
+    main {
+        width: 60%;
+    }
+}

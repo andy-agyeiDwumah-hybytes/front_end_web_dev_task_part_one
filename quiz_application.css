@@ -1,0 +1,129 @@
+:root {
+    color-scheme: light dark;
+    --background-light: #f5f5f5;
+    --text-light: #222;
+    --background-dark: #121212;
+    --text-dark: #e0e0e0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1.5em 0;
+    background-color: light-dark(var(--background-light), var(--background-dark));
+    color: light-dark(var(--text-light), var(--text-dark));
+}
+
+header {
+    text-align: center;
+}
+
+p {
+    background-color: light-dark(var(--background-dark), var(--background-light));
+    color: light-dark(var(--text-dark), var(--text-light));
+    margin: 0;
+    padding: 0.5em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+form {
+    padding: 2em 0 0;
+}
+
+.form-container {
+    position: relative;
+    height: 28em;
+}
+
+fieldset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+fieldset.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+fieldset > div:first-of-type {
+    margin-top: 2.5em;
+}
+
+fieldset > div {
+    margin-bottom: 2em;
+}
+
+button {
+    line-height: 1.5;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+button.prevBtn {
+    --grey: #d3d3d3;
+    margin-right: 1em;
+    background-color: light-dark(var(--grey), var(--background-dark));
+}
+
+button.nextBtn {
+    --teal: #20c997;
+    background-color: var(--teal);
+}
+
+.button-container {
+    padding: 1.2em 0;
+    text-align: center;
+}
+
+#submitBtnContainer {
+    text-align: center;
+}
+
+#submitBtnContainer > button {
+    --blue: #4169e1;
+    background-color: var(--blue);
+    color: var(--text-dark);
+}
+
+button:hover {
+  filter: brightness(80%);
+  transition: 0.3s;
+}
+
+input[type="radio"] {
+    --blue: rgba(0 0 255 / 1);
+    --red: rgba(255 0 0 / 1);
+    accent-color: light-dark(var(--blue), var(--red));
+}
+
+#scoreContainer {
+    text-align: center;
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media (width >= 992px) {
+    body {
+        width: 70%;
+    }
+}

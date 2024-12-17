@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="intuitive_nav_menu.css">
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- JAVASCRIPT -->
+    <script src="intuitive_nav_menu.js" defer></script>
+    <title>Intuitive Navigation Menu</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <a href="#">
+          <img src="essay_hub_logo.png" alt="The Essay Hub logo">
+        </a>
+        <nav id="main-nav">
+          <menu id="navigation-menu">
+            <li class="nav-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+              <div class="dropdown-menu-container">
+                <menu class="submenu">
+                  <li><a href="#" class="submenu-links">Essay Writing</a></li>
+                  <li><a href="#" class="submenu-links">Research Papers</a></li>
+                  <li><a href="#" class="submenu-links">Dissertations</a></li>
+                </menu>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Login/Sign up</a>
+            </li>
+          </menu>
+          <div class="hamburger" role="button" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

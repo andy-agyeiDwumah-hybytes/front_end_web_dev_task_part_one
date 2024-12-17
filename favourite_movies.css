@@ -1,0 +1,111 @@
+:root {
+    --black: rgba(0 0 0 / 1);
+    --white: rgba(255 255 255 / 1);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background-color: #13131a; */
+    background-color: #0d0d1a;
+}
+
+.klee-one-regular { /* google font */
+    font-family: "Klee One", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    padding-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li::marker {
+    content: "- ";
+}
+
+/* TABLE STYLES */
+table {
+    border-collapse: collapse;
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+    color: var(--white);
+}
+
+thead {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+th[scope="col"] {
+    border: 1px solid var(--white);
+    border-bottom: none;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #F7F7F7;
+}
+
+table tbody tr:nth-child(even) {
+    color: var(--white);
+}
+
+th, td {
+    padding: 0.4em 0.6em;
+}
+
+time {
+    font-style: italic;
+}
+
+/* END TABLE STYLES */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+
+#poster-image {
+    width: 100%;
+    height: 100%;
+}
+
+.close-modal-container {
+    background-color: var(--black);
+    right: 0;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    padding: 0.4em 1.2em;
+}
+
+.close::after { /* the span containing the x button */
+    content: "x";
+    font-size: 3rem;
+    color: var(--white);
+}

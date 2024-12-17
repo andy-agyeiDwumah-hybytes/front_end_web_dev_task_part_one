@@ -1,0 +1,96 @@
+:root {
+    --backgroundImageOpacity: 0.2;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1800px;
+    padding-top: 2em;
+    background-color: #F0F7F4;
+}
+
+/* GOOGLE FONT */
+.akatab-medium {
+    font-family: "Akatab", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* END GOOGLE FONT */
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 2rem;
+    background-color: #FDE12D;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+p.loading-paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    list-style-type: none;
+    border-radius: 10px;
+    margin: 0 0 2em;
+}
+
+div.linkSourceNameContainer {
+    background-color: rgba(255 255 255 / 0.6);
+    display: inline-block;
+    padding-inline: 0.5em;
+    border-radius: 20%;
+}
+
+div.photo-container {
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    position: relative;
+    /* Default value for the background image */
+    /* Update in JavaScript */
+    --background-image: url("");
+    background-image: var(--background-image);
+    background-position: center;
+    background-size: cover;
+    border-image: fill 1 linear-gradient(
+        rgba(255 255 255 / var(--backgroundImageOpacity)) 95%,
+        rgba(0 0 255 / var(--backgroundImageOpacity)));
+}
+
+p.source-name {
+    font-style: italic;
+    font-weight: 600;
+    color: #1B263B;
+}
+
+/* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
+@media (width >= 280px) {
+    body {
+        width: 100%;
+    }
+}
+ 
+@media (width >= 768px) {
+    body {
+        width: 60%;
+    }
+}

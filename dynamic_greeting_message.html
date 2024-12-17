@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="dynamic_greeting_message.css">
+    <!-- JAVASCRIPT -->
+    <script src="dynamic_greeting_message.js" defer></script>
+    <title>Dynamic Greeting Message</title>
+  </head>
+  <body>
+    <div id="greeting-container" aria-live="polite"></div>
+    <main>
+      <div>
+        <form id="my-form">
+          <div>
+            <p id="required-info">
+              Required fields are followed by a
+              <span aria-label="required">*</span>
+            </p>
+          </div>
+          <div>
+            <label for="user-name"
+              >First Name:<span aria-label="required">*</span></label
+            >
+            <input
+              type="text"
+              name="user_name"
+              id="user-name"
+              maxlength="30"
+              autofocus
+              required
+            >
+          </div>
+          <div id="button-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

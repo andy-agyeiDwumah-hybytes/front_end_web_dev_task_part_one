@@ -1,0 +1,98 @@
+:root {
+    --black: #333333;
+    --white: #F7F7F7;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.6em;
+}
+
+input[type="number"] {
+    padding: 0.4em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#required-info {
+    font-size: 0.9rem;
+}
+
+div:has(button) {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+div button:first-of-type {
+    background-color: #dc3545;
+}
+
+div button:last-of-type {
+    background-color: #28a745;
+}
+
+button {
+    line-height: 1.5;
+    padding: 0.4em;
+    cursor: pointer;
+    box-shadow: 1px 1px #000;
+    font-weight: 600;
+}
+
+button:active {
+    transform: translateY(-2px);
+}
+
+span[aria-label="required"] {
+    color: rgba(255 0 0 / 1);
+}
+
+#time-up-div,
+#time-remaining-div {
+    display: none;
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+@keyframes increaseFontSize {
+    0% {
+        font-size: 2rem;
+    }
+    100% {
+        font-size: 2.5rem;
+    }
+}
+
+#time-up-text {
+    animation-name: increaseFontSize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

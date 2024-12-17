@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="show_hide_elements.css">
+    <!-- JAVASCRIPT -->
+    <script src="show_hide_elements.js" defer></script>
+    <title>Show Hide Elements</title>
+  </head>
+  <body>
+    <main>
+      <div id="blog-article-container">
+        <section aria-labelledby="title-heading">
+          <h1 id="title-heading">
+            The impact ChatGPT is having on software engineering
+          </h1>
+          <h2>How AI Language Models are Shaping the Future of Coding</h2>
+        </section>
+        <div id="author-name-btn-container">
+          <div>
+            By Andy Agyei-Dwumah
+            <span id="release-date-text">&#9675;<time datetime="2024-10-29"><mark>Oct 29, 2024</mark></time></span>
+          </div>
+          <div>
+            <button id="share-btn">Share</button>
+          </div>
+        </div>
+        <hr>
+        <section aria-labelledby="key-takeaways-heading">
+          <h3 id="key-takeaways-heading">Key Takeaways</h3>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512.001 512.001"
+                style="enable-background: new 0 0 512.001 512.001"
+                xml:space="preserve"
+                width="40"
+                height="40"
+              >
+                <path
+                  style="fill: #a5f2e5"
+                  d="M154.945 376.517h155.826V492.55H154.945z"
+                />
+                <path
+                  d="M320.489 357.059H154.942V191.513c0-5.372-4.355-9.728-9.728-9.728H9.728c-5.372 0-9.728 4.355-9.728 9.728v75.769c0 5.372 4.355 9.728 9.728 9.728 5.372 0 9.728-4.355 9.728-9.728V201.24h116.03v291.032H19.456v-150.02c0-5.372-4.355-9.728-9.728-9.728-5.372 0-9.728 4.355-9.728 9.728v159.75a9.692 9.692 0 0 0 2.988 7.005A9.692 9.692 0 0 0 10 512.002h310.488a9.727 9.727 0 0 0 9.728-9.728V366.786c.001-5.372-4.354-9.727-9.727-9.727zm-9.727 135.485h-155.82v-116.03h155.819v116.03z"
+                />
+                <path
+                  style="fill: #62d9c7"
+                  d="M19.456 342.252v150.022h116.03V201.24H19.456v66.041c0 5.372-4.355 9.728-9.728 9.728v55.513c5.373.002 9.728 4.356 9.728 9.73z"
+                />
+                <path
+                  style="fill: #a5f2e5"
+                  d="M201.236 19.456h155.813v116.033H201.236z"
+                />
+                <path
+                  style="fill: #62d9c7"
+                  d="M502.273 179.477a9.727 9.727 0 0 1-9.728-9.728V19.728h-116.03V310.76h116.03v-66.041c0-5.372 4.354-9.728 9.728-9.728v-55.514z"
+                />
+                <path
+                  d="M492.545 244.718v66.041h-116.03V19.728h116.03V169.75c0 5.372 4.354 9.728 9.728 9.728 5.372 0 9.728-4.355 9.728-9.728V10a9.685 9.685 0 0 0-2.992-7.008A9.688 9.688 0 0 0 502 0H191.513c-5.372 0-9.728 4.355-9.728 9.728v135.486c0 5.372 4.355 9.728 9.728 9.728h165.546v165.546c0 5.372 4.354 9.728 9.728 9.728h135.486a9.727 9.727 0 0 0 9.728-9.728v-75.769c0-5.372-4.354-9.728-9.728-9.728s-9.728 4.355-9.728 9.727zM201.241 19.456h155.818v116.03H201.241V19.456z"
+                />
+              </svg>
+              ChatGPT and similar AI tools are helping developers code more
+              efficiently, streamlining everything from debugging to
+              documentation.
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512.001 512.001"
+                style="enable-background: new 0 0 512.001 512.001"
+                xml:space="preserve"
+                width="40"
+                height="40"
+              >
+                <path
+                  style="fill: #a5f2e5"
+                  d="M154.945 376.517h155.826V492.55H154.945z"
+                />
+                <path
+                  d="M320.489 357.059H154.942V191.513c0-5.372-4.355-9.728-9.728-9.728H9.728c-5.372 0-9.728 4.355-9.728 9.728v75.769c0 5.372 4.355 9.728 9.728 9.728 5.372 0 9.728-4.355 9.728-9.728V201.24h116.03v291.032H19.456v-150.02c0-5.372-4.355-9.728-9.728-9.728-5.372 0-9.728 4.355-9.728 9.728v159.75a9.692 9.692 0 0 0 2.988 7.005A9.692 9.692 0 0 0 10 512.002h310.488a9.727 9.727 0 0 0 9.728-9.728V366.786c.001-5.372-4.354-9.727-9.727-9.727zm-9.727 135.485h-155.82v-116.03h155.819v116.03z"
+                />
+                <path
+                  style="fill: #62d9c7"
+                  d="M19.456 342.252v150.022h116.03V201.24H19.456v66.041c0 5.372-4.355 9.728-9.728 9.728v55.513c5.373.002 9.728 4.356 9.728 9.73z"
+                />
+                <path
+                  style="fill: #a5f2e5"
+                  d="M201.236 19.456h155.813v116.033H201.236z"
+                />
+                <path
+                  style="fill: #62d9c7"
+                  d="M502.273 179.477a9.727 9.727 0 0 1-9.728-9.728V19.728h-116.03V310.76h116.03v-66.041c0-5.372 4.354-9.728 9.728-9.728v-55.514z"
+                />
+                <path
+                  d="M492.545 244.718v66.041h-116.03V19.728h116.03V169.75c0 5.372 4.354 9.728 9.728 9.728 5.372 0 9.728-4.355 9.728-9.728V10a9.685 9.685 0 0 0-2.992-7.008A9.688 9.688 0 0 0 502 0H191.513c-5.372 0-9.728 4.355-9.728 9.728v135.486c0 5.372 4.355 9.728 9.728 9.728h165.546v165.546c0 5.372 4.354 9.728 9.728 9.728h135.486a9.727 9.727 0 0 0 9.728-9.728v-75.769c0-5.372-4.354-9.728-9.728-9.728s-9.728 4.355-9.728 9.727zM201.241 19.456h155.818v116.03H201.241V19.456z"
+                />
+              </svg>
+              While AI brings efficiency, software engineers still play a
+              critical role in guiding and interpreting AI outputs to ensure
+              high-quality code.
+            </li>
+          </ul>
+        </section>
+        <p id="opinion-expressed-by-author-text">
+          <em>Opinions expressed by author are their own</em>
+        </p>
+        <section aria-labelledby="main-content-heading">
+          <h3 id="main-content-heading">Main Content</h3>
+          <div>
+            <p class="main-content-text">
+              The advent of AI language models like ChatGPT is revolutionizing
+              how software engineers approach coding, debugging, and even
+              creative problem-solving. ChatGPT, developed by OpenAI, can
+              generate code snippets, answer technical questions, and provide
+              explanations for complex programming concepts, making it a
+              valuable tool for both beginners and experienced developers.
+            </p>
+          </div>
+          <div>
+            <p class="main-content-text">
+              One of the most significant impacts ChatGPT has had is on coding
+              productivity. Engineers can save time on repetitive tasks by
+              asking ChatGPT to automate routine coding, refactor code, or even
+              handle straightforward documentation. This capability allows
+              developers to focus on more complex, creative aspects of their
+              work. Additionally, by providing instant feedback on code snippets
+              and suggesting improvements, ChatGPT is effectively a 24/7 code
+              reviewer, which is especially beneficial in fast-paced development
+              environments. However, while ChatGPT enhances productivity, it's
+              important to recognize its limitations. The AI lacks true
+              understanding and context, sometimes producing code that appears
+              correct syntactically but contains logical errors. Therefore,
+              human oversight remains crucial. Engineers must carefully review
+              AI-generated code to ensure it meets project requirements, adheres
+              to best practices, and avoids potential security risks. Moreover,
+              ChatGPT is shaping collaborative efforts in software development.
+              It can serve as a preliminary resource for developers to
+              brainstorm ideas, troubleshoot bugs, or learn new technologies.
+              This can also make onboarding smoother, as new developers can use
+              AI to gain an understanding of codebases without constantly
+              relying on more experienced colleagues. That said, this shift is
+              also prompting discussions within the tech community about the
+              role of AI in shaping future engineering practices and skills,
+              raising questions about the balance between AI reliance and human
+              intuition in coding.
+            </p>
+          </div>
+          <div>
+            <p class="main-content-text">
+              In summary, ChatGPT is transforming software engineering by
+              enhancing productivity, supporting learning, and encouraging a
+              collaborative approach to problem-solving. While it&apos;s not a
+              replacement for human expertise, it has proven to be a powerful
+              tool, augmenting the capabilities of software engineers and
+              pushing the boundaries of what&apos;s possible in the field.
+            </p>
+          </div>
+        </section>
+        <hr>
+        <section aria-labelledby="comments-heading">
+          <div id="comment-heading-and-button-container">
+            <div>
+              <h3 id="comments-heading">Comments</h3>
+            </div>
+            <div>
+              <button type="button" id="show-hide-comment-section-btn">
+                Hide comments
+              </button>
+            </div>
+          </div>
+          <div id="comment-section-container">
+            <!-- Can generate using JavaScript -->
+            <div class="comment-info-container">
+              <div class="img-container">
+                <img src="man_in_suit.jpg" alt="User profile picture">
+              </div>
+              <div class="user-comment-container">
+                <h4 class="user-name-comment">User123</h4>
+                <p><time datetime="2024-10-29" class="comment-date">Oct 29, 2024</time></p>
+                <p>
+                  &quot;Great article! I&apos;ve been using ChatGPT to help me
+                  with JavaScript bugs, and it&apos;s incredible how much time
+                  it saves. However, I still find myself double-checking the
+                  code. AI is amazing, but there&apos;s always a need for human
+                  oversight.&quot;
+                </p>
+              </div>
+            </div>
+            <div class="comment-info-container">
+              <div class="img-container">
+                <img src="woman_selfie.jpg" alt="User profile picture">
+              </div>
+              <div class="user-comment-container">
+                <h4 class="user-name-comment">CodeGuru99</h4>
+                <p><time datetime="2024-10-29" class="comment-date">Oct 29, 2024</time></p>
+                <p>
+                  &quot;Interesting read! ChatGPT has definitely improved my
+                  workflow. I love how it can handle the tedious parts of
+                  coding, but I agree with your points about limitations. We
+                  should always remember that AI is a tool, not a
+                  replacement.&quot;
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

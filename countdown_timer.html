@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andy Agyei-Dwumah">
+    <!-- CSS -->
+    <link rel="stylesheet" href="countdown_timer.css">
+    <!-- JAVASCRIPT -->
+    <script src="counterdown_timer.js" defer></script>
+    <title>Countdown</title>
+  </head>
+  <body>
+    <main>
+      <form id="my-form">
+        <h1>Countdown</h1>
+        <p id="required-info">
+          Required fields are followed by a <span aria-label="required">*</span>
+        </p>
+        <div>
+          <label for="number"
+            >Enter number: <span aria-label="required">*</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            name="user_number"
+            min="1"
+            autofocus
+            required
+          />
+        </div>
+        <div>
+          <button type="reset" id="reset">Reset countdown</button>
+          <button type="submit" id="submit">Start countdown</button>
+        </div>
+      </form>
+      <div id="time-remaining-div">
+        <p id="time-remaining-text"></p>
+      </div>
+      <div id="time-up-div">
+        <h2 id="time-up-text">Times Up!</h2>
+      </div>
+    </main>
+  </body>
+</html>

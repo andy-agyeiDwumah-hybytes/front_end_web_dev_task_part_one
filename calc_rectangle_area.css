@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F6F4F3;
+}
+
+#my-form {
+    padding: 0 0 0 1.5em;
+}
+
+span[aria-label="required"] {
+    color: rgba(255 0 0 / 1);
+}
+
+input[type="number"] {
+    margin-top: 1.5em;
+    padding: 0.2em;
+}
+
+.button-container {
+    margin-top: 1.5em;
+}
+
+button {
+    line-height: 2.5;
+    padding-inline: 1em;
+    background-color: #89A6FB;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #000;
+    font-size: 1.1rem;
+}
+
+.answer-container {
+    margin-top: 2.5em;
+    display: none;
+}

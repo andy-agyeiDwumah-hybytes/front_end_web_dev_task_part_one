@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Nike Air Force 1 '07",
+        "price": 109.99,
+        "justIn": true,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_zero_seven.png"
+    },
+    {
+        "name": "Nike Air Force 1 Luxe",
+        "price": 129.99,
+        "justIn": false,
+        "bestSeller": true,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_luxe.png"
+    },
+    {
+        "name": "Nike Air Force 1",
+        "price": 83.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one.png"
+    },
+    {
+        "name": "Nike Air Force 1 Mid '07",
+        "price": 119.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_mid_zero_seven.png"
+    },
+    {
+        "name": "Nike Air Force 1 Low",
+        "price": 134.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": 35,
+        "imgSrc": "nike_air_force_one_low.png"
+    },
+    {
+        "name": "Nike Air Force 1 '07 Next Nature",
+        "price": 119.99,
+        "justIn": true,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_zero_seven_next_nature.png"
+    },
+    {
+        "name": "Nike Air Force 1 '07 Fresh",
+        "price": 129.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_zero_seven_fresh.png"
+    },
+    {
+        "name": "Nike Air Force 1 Low EVO",
+        "price": 129.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_low_evo.png"
+    },
+    {
+        "name": "Nike Air Force 1 '07 LV8",
+        "price": 109.95,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": 20,
+        "imgSrc": "nike_air_force_one_zero_seven_lv_eight.png"
+    },
+    {
+        "name": "Nike Lunar Force 1",
+        "price": 164.99,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_lunar_force_one.png"
+    },
+    {
+        "name": "Nike x Billie Eilish Air Force 1 High '07",
+        "price": 152.95,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_billie_eilish_air_force_one_high_zero_seven.png"
+    },
+    {
+        "name": "Nike Air Force 1 Low x Slam Jam",
+        "price": 152.95,
+        "justIn": false,
+        "bestSeller": false,
+        "discount": false,
+        "imgSrc": "nike_air_force_one_low_slam_jam.png"
+    }
+]
