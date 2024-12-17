@@ -16,9 +16,15 @@ This is **Part 1** of the Front-End Web Development task. This covers the follow
 Before starting, you will need to:
 1. Create an account with [RapidAPI](https://rapidapi.com/) to get your APIKEY
 2. Subscribe to the following APIs (free of cost):
+
 * WordsAPI
+  ![Screenshot 2024-12-17 205039](https://github.com/user-attachments/assets/b9d773ff-5776-4e34-b181-1b1f8cb22cb9)
+
 * WeatherAPI.com
+  ![Screenshot 2024-12-17 205534](https://github.com/user-attachments/assets/57b957ec-9f0b-45a4-9c32-06bc1dd9bdb7)
+
 * Real-Time News Data
+  ![Screenshot 2024-12-17 205120](https://github.com/user-attachments/assets/487e343f-5459-4292-9a06-71c06c232b23)
 
 This is necessary to view the following exercises:
 1. Fetch Data from API
