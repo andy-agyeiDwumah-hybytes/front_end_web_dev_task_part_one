@@ -12,8 +12,8 @@
   </head>
   <body>
     <main>
-      <form id="form">
-        <h1>To Do List</h1>
+      <form id="form" aria-labelledby="to-do-list-heading">
+        <h1 id="to-do-list-heading">To Do List</h1>
         <p>
           Required fields are followed by <span aria-label="required">*</span>.
         </p>
@@ -22,7 +22,7 @@
             Task Name:
             <span aria-label="required">*</span>
           </label>
-          <input type="text" name="task_name" id="task-name" placeholder="Add a task" maxlength="50" required>
+          <input type="text" name="task_name" id="task-name" placeholder="New task" maxlength="50" required>
         </div>
         <div>
           <label for="task-description">

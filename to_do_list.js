@@ -40,6 +40,7 @@ const addTaskToDom = task => {
     taskDescription.innerHTML = description;
     taskDescription.className = "description"
     taskDeadline.innerHTML = `<strong>Deadline: ${date}</strong>`;
+    button.setAttribute("type", "button");
     button.innerHTML = "Remove";
     button.className = "removeBtn";
     button.addEventListener("click", () => removeTask(task, li))
