@@ -1,28 +1,45 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.getElementById("navigation-menu");
+const nav = document.getElementById("main-nav");
+const dropdownMenuContainer = document.querySelector(
+  ".dropdown-menu-container"
+);
+const serviceLink = document.getElementById("service-link");
 
-function mobileMenu() {
+function toggleNavHeight() {
   hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+  nav.classList.toggle("active");
 }
 
-hamburger.addEventListener("click", mobileMenu);
+hamburger.addEventListener("click", toggleNavHeight);
 // Allow user to interact with hamburger using enter key
-hamburger.addEventListener("keydown", e => {
-  if (e.code === "Enter" || e.code === "Space") {
-    mobileMenu()
-  }
-})
+hamburger.addEventListener("keydown", (e) => {
+  if (e.code !== "Enter") return;
+  toggleNavHeight();
+});
 
-// width must match breakpoint specified in the css
-let bootStrapLargeBreakPoint = window.matchMedia("(min-width: 992px)");
+// Allow for keyboard accessibility when showing 'service' links
+function toggleDropDownMenuContainer() {
+  if (dropdownMenuContainer.style.display === "block") {
+    dropdownMenuContainer.style.display = "none";
+  } else {
+    dropdownMenuContainer.style.display = "block";
+  }
+}
+
+serviceLink.addEventListener("keydown", e => {
+  if (e.code !== "Enter") return
+    toggleDropDownMenuContainer()
+});
+
+// Width must match breakpoint specified in 'intuitive_nav_menu.css'
+const bootStrapLargeBreakPoint = window.matchMedia("(min-width: 992px)");
 
 // This will allow the menu to be closed even if the user didn't close it before
 window.addEventListener("resize", () => {
   if (bootStrapLargeBreakPoint.matches) {
-    if (hamburger.classList.contains("active") && navMenu.classList.contains("active")) {
+    if (hamburger.classList.contains("active")) {
       hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
+      nav.classList.remove("active");
     }
   }
 })
