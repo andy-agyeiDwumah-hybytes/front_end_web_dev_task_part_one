@@ -13,7 +13,11 @@ html {
     box-sizing: inherit;
 }
 
-main {
+body {
+    max-width: 2200px
+}
+
+body, main {
     margin: 0 auto;
 }
 
