@@ -62,7 +62,7 @@ textarea {
 form {
     container: my-form / inline-size;
     max-width: 1100px;
-    background-image: url("images/general/contact-form-img.jpg");
+    background-image: url("../../images/general/contact-form-img.jpg");
     background-size: cover;
     background-position: center;
     /* Overlay */

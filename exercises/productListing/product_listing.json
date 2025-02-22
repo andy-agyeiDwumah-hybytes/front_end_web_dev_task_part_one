@@ -5,7 +5,7 @@
         "justIn": true,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_zero_seven.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_zero_seven.png"
     },
     {
         "name": "Nike Air Force 1 Luxe",
@@ -13,7 +13,7 @@
         "justIn": false,
         "bestSeller": true,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_luxe.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_luxe.png"
     },
     {
         "name": "Nike Air Force 1",
@@ -21,7 +21,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one.png"
     },
     {
         "name": "Nike Air Force 1 Mid '07",
@@ -29,7 +29,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_mid_zero_seven.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_mid_zero_seven.png"
     },
     {
         "name": "Nike Air Force 1 Low",
@@ -37,7 +37,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": 35,
-        "imgSrc": "images/shoes/nike_air_force_one_low.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_low.png"
     },
     {
         "name": "Nike Air Force 1 '07 Next Nature",
@@ -45,7 +45,7 @@
         "justIn": true,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_zero_seven_next_nature.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_zero_seven_next_nature.png"
     },
     {
         "name": "Nike Air Force 1 '07 Fresh",
@@ -53,7 +53,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_zero_seven_fresh.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_zero_seven_fresh.png"
     },
     {
         "name": "Nike Air Force 1 Low EVO",
@@ -61,7 +61,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_low_evo.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_low_evo.png"
     },
     {
         "name": "Nike Air Force 1 '07 LV8",
@@ -69,7 +69,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": 20,
-        "imgSrc": "images/shoes/nike_air_force_one_zero_seven_lv_eight.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_zero_seven_lv_eight.png"
     },
     {
         "name": "Nike Lunar Force 1",
@@ -77,7 +77,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_lunar_force_one.png"
+        "imgSrc": "../../images/shoes/nike_lunar_force_one.png"
     },
     {
         "name": "Nike x Billie Eilish Air Force 1 High '07",
@@ -85,7 +85,7 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_billie_eilish_air_force_one_high_zero_seven.png"
+        "imgSrc": "../../images/shoes/nike_billie_eilish_air_force_one_high_zero_seven.png"
     },
     {
         "name": "Nike Air Force 1 Low x Slam Jam",
@@ -93,6 +93,6 @@
         "justIn": false,
         "bestSeller": false,
         "discount": false,
-        "imgSrc": "images/shoes/nike_air_force_one_low_slam_jam.png"
+        "imgSrc": "../../images/shoes/nike_air_force_one_low_slam_jam.png"
     }
 ]

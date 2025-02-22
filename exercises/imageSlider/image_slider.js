@@ -1,30 +1,30 @@
 const images = [
     {
-        src: "images/screenworks/the_woman_king.jpg",
+        src: "../../images/screenworks/the_woman_king.jpg",
         alt: "the woman king"
     },
     {
-        src: "images/screenworks/the_terminator.jpg",
+        src: "../../images/screenworks/the_terminator.jpg",
         alt: "the terminator"
     },
     {
-        src: "images/screenworks/the_matrix.jpg",
+        src: "../../images/screenworks/the_matrix.jpg",
         alt: "the matrix"
     },
     {
-        src: "images/screenworks/john_wick.jpg",
+        src: "../../images/screenworks/john_wick.jpg",
         alt: "john wick"
     },
     {
-        src: "images/screenworks/american_sniper.jpg",
+        src: "../../images/screenworks/american_sniper.jpg",
         alt: "american sniper"
     },
     {
-        src: "images/screenworks/good_luck_to_you_leo_grande.jpg",
+        src: "../../images/screenworks/good_luck_to_you_leo_grande.jpg",
         alt: "good luck to you leo grande"
     },
     {
-        src: "images/screenworks/hancock.jpg",
+        src: "../../images/screenworks/hancock.jpg",
         alt: "hancock"
     },
 ]

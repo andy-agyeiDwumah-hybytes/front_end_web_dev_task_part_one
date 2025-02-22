@@ -1,4 +1,4 @@
-import APIKEY from "./secretFile.js";
+import APIKEY from "../../secretFile.js";
 
 $(function () {
   $("#form").submit(function (e) {

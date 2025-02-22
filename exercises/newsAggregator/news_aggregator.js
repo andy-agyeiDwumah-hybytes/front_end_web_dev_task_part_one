@@ -1,4 +1,4 @@
-import APIKEY from "./secretFile.js";
+import APIKEY from "../../secretFile.js";
 
 const countryCode = "US";  // Can edit
 const limitHeadlines = 20;

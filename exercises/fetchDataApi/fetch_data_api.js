@@ -1,5 +1,5 @@
 // Import APIKEY
-import APIKEY from "./secretFile.js";
+import APIKEY from "../../secretFile.js";
 
 // URL and options
 const url = "https://wordsapiv1.p.rapidapi.com/words/?random=true";
