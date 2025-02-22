@@ -149,7 +149,7 @@ section[aria-labelledBy="services-heading"] {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     place-items: center;
     margin: 10em 0;
 }
@@ -256,7 +256,6 @@ footer {
 
     /* SERVICES */
     #grid-container {
-        grid-template-columns: repeat(1, minmax(100px, 1fr));
         row-gap: 5em;
     }
 
@@ -278,7 +277,6 @@ footer {
 
     /* SERVICES */
     #grid-container {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
         gap: 4em;
     }
 

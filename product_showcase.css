@@ -13,7 +13,8 @@ html {
 }
 
 body {
-    padding: 2em 0;
+    padding-block: 2em;
+    padding-inline: 0;
     background-color: #03091e;
     color: var(--white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,12 +27,15 @@ h1 {
 
 #grid-container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     max-width: 1200px;
-    margin: 0 auto;
+    margin-block: 0;
+    margin-inline: auto;
 }
 
 #grid-container > div {
-    padding: 2em 1.5em;
+    padding-block: 2em;
+    padding-inline: 1.5em;
     position: relative;
 }
 
@@ -48,12 +52,13 @@ img:hover {
 }
 
 div.text-div {
-    margin-bottom: 2.5em;
+    margin-block-end: 2.5em;
 }
 
 button {
     line-height: 1.5;
-    padding: 0.5em 1em;
+    padding-block: 0.5em;
+    padding-inline: 1em;
     border-start-start-radius: 10px;
     cursor: pointer;
     background-color: rgba(40 56 170 / 0.8);
@@ -73,27 +78,13 @@ button:hover {
 }
 
 /* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
-@media (width >= 280px) {
-    #grid-container {
-        grid-template-columns: repeat(1, minmax(100px, 1fr));
-        row-gap: 1em;
-    }
-}
-
-@media (width >= 768px) {
-    #grid-container {
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
-    }
-}
-
 @media (width >= 1200px) {
     #grid-container {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
         row-gap: 4em;
     }
 
     /* Hide border for top 3 items */
     #grid-container > div:not(:nth-child(1), :nth-child(2), :nth-child(3)) {
-        border-top: 1px solid rgba(181 181 181 / 1);
+        border-block-start: 1px solid rgba(181 181 181 / 1);
     }
 }
