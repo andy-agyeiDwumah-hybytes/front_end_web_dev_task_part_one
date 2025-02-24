@@ -59,9 +59,16 @@ textarea {
     border: 1px solid var(--black);
 }
 
+.form-wrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-inline: auto;
+    width: min(95%, 500px);
+}
+
 form {
-    container: my-form / inline-size;
-    max-width: 1100px;
+    padding-inline: min(5%, 2em);
+    padding-block: 1em;
     background-image: url("../../images/general/contact-form-img.jpg");
     background-size: cover;
     background-position: center;
@@ -90,6 +97,7 @@ textarea {
     outline: none;
     background-color: transparent;
     border-bottom: 1px solid var(--black);
+    width: 100%;
 }
 
 input:is(:focus, :focus-visible),
@@ -129,29 +137,3 @@ textarea:user-invalid {
 }
 
 /* MEDIA QUERIES: 280px, 576px, 768px, 992px, 1200px */
-@container my-form (width >= 280px) {
-    input,
-    textarea {
-        width: 100%;
-    }
-}
-
-@media (width >= 576px) {
-    form {
-        padding: 0.5em 1em;
-    }   
-}
-
-@media (width >= 768px) {
-    form {
-        width: 50%;
-        margin: 0 auto;
-    }
-}
-
-@media (width >= 992px) {
-    form {
-        width: 35%;
-    }
-}
-

@@ -57,7 +57,7 @@ button {
 }
 
 /* TITLE */
-mark {
+#release-date-text {
     padding: 0.2em;
     background-color: rgba(223 223 207 / 1);
 }

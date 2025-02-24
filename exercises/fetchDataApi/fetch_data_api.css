@@ -26,6 +26,10 @@ body {
     padding-top: 3em;
 }
 
+:is(p, h2):empty  {
+    display: none;
+}
+
 header, #word-definition-container {
     text-align: center;
 }

@@ -45,7 +45,7 @@ const updateUI = data => {
   console.log(data);
   let word = data["word"] || "";
   let partOfSpeechExists = data?.results?.[0]?.["partOfSpeech"];
-  let partOfSpeech = partOfSpeechExists
+  let partOfSpeech = (partOfSpeechExists && word)
     ? `<span class="partOfSpeech">(${partOfSpeechExists})</span>`
     : "";
   let definition = data?.results?.[0]?.["definition"] || "";

@@ -23,8 +23,8 @@ body {
     padding-inline: 1em;
 }
 
-.heading {
-    text-wrap: balance;
+header {
+    margin-block-end: 1.8em;
 }
 
 #grid-container {
