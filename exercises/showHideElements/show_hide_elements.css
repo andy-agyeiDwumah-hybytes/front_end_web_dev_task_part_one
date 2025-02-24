@@ -123,13 +123,12 @@ img {
         padding-inline: 0.5em;
     }
 
-    #release-date-text {
-        display: block;
-        margin: 0.8em 0;
-    }
-
     #author-name-btn-container {
         margin-top: 3em;
+    }
+
+    .author-name-wrapper {
+        margin-block-end: 1.5em;
     }
 }
 
@@ -158,16 +157,16 @@ img {
         align-items: center;
     }
 
-    #release-date-text {
-        display: inline;
-    }
-
     #author-name-btn-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 2em;
-}
+    }
+
+    .author-name-wrapper {
+        margin-block-end: 0;
+    }
 }
 
 @media (width >= 1200px) {
